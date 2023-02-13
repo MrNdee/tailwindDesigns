@@ -1,0 +1,19 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "A responsive design website",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./main/output.css",
+    "watch": "tailwindcss -i ./input.css -o ./main/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Responsive Designs"
+  },
+  "author": "MrNdee",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  }
+}
