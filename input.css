@@ -3,6 +3,69 @@
 @tailwind utilities;
 
 body {
-  padding-top: 70px;
+  padding-top: 20px;
   @apply bg-[#161623]
+}
+
+@media (max-width: 454px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+ @media (max-width: 638px) {
+  .header-items {
+    display: none;
+  }
+ }
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  /* top: -25px;
+  left: 250px; */
+  width: 24px;
+  height: 2px;
+  background: #7e5bef;
+  transform: rotate(0);
+  transition: all 0.5s;
+  z-index: ;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+#cta {
+  background-image: url('img/blob3.svg');
+  background-repeat: no-repeat;
 }
