@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  background-image: url('../img/blob2.svg');
   padding-top: 20px;
   @apply bg-[#161623]
 }
@@ -36,8 +37,7 @@ body {
   height: 2px;
   background: #7e5bef;
   transform: rotate(0);
-  transition: all 0.5s;
-  z-index: ;
+  transition: all 0.5s;  
 }
 
 .hamburger-middle {
@@ -65,7 +65,8 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-#cta {
-  background-image: url('img/blob3.svg');
+footer {
+  background-image: url('../img/blob1.svg');
   background-repeat: no-repeat;
+  background-position-x: right;
 }
